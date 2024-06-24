@@ -35,8 +35,7 @@ ajoutuser
         Wait Until Element Is Visible    ${confirmation}
         Input Password    ${confirmation}       ${motdepass}   
         Wait Until Element Is Visible    ${save}
-        Click Element    ${save}
-        
+        Click Element    ${save}  
    END
 
 

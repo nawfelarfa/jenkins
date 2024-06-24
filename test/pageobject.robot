@@ -27,7 +27,7 @@ auhentkouser
     loginkouser
     Close Browser
 ajouter
-    [Documentation]    ajouter un utilisateur
+    [Documentation]    ajouter un u                        tilisateur
     [Tags]    aj
     openpage
     loginok
