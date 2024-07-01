@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    OperatingSystem
+Library      AllureLibrary  
 Resource    ../ressource/keyword/commun.robot
 Resource    ../ressource/keyword/authentification.robot
 Resource    ../ressource/keyword/ajoutuser.robot
@@ -39,6 +40,7 @@ rechercheruserok
     openpage
     loginok
     search
+    Capture Page Screenshot
     Close Browser
 rechercheruserko
     [Documentation]     recherche d'un utilisateur
@@ -49,7 +51,7 @@ rechercheruserko
     Close Browser
 restuser
     [Documentation]    reset des informations de recherche
-    [Tags]    azero
+    [Tags]    Haute
     openpage
     loginok
     reset

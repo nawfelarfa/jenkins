@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    OperatingSystem
+Library    XML
 Variables    ../locators/acceuil.py
 Resource    authentification.robot
 Variables    ../locators/user.py
@@ -13,6 +14,7 @@ search
     Wait Until Element Is Visible    ${btsearch}
     Click Button    ${btsearch}
     Wait Until Page Contains    Admin 
+   
 searchko
     Wait Until Element Is Visible    ${admin}
     Click Element    ${admin}
@@ -38,14 +40,15 @@ reset
     Click Element    ${enabled}
     Wait Until Element Is Visible    ${reset}
     Click Button    ${reset}
-    ${value}    Get Element Attribute    ${uersearch}     aaa
+    ${value}    Get Element Attribute    ${uersearch}    jffghfghfh 
     ${vemp}     Get Element Attribute    ${employername}     eee
     ${vstat}    Get Element Attribute    ${status}    ssss
     ${vrole}    Get Element Attribute    ${role}    rrrr 
-    Should Be Equal    ${value}    ${None}
+    Should Be Equal     ${value}    ${None}
     Should Be Equal     ${vemp}    ${None}
     Should Be Equal    ${vstat}    ${None}
     Should Be Equal    ${vrole}    ${None}
    
 
-    
+*** Comments ***
+    recherche test
