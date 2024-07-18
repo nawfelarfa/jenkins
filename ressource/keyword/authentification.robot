@@ -11,7 +11,7 @@ loginok
     Wait Until Element Is Visible    ${password}
     Input Password    ${password}    ${motpass}
     Click Element    ${seconnecter}
-    #Title Should Be    orangeHRM
+    Title Should Be    OrangeHRM
 loginkopassword
     Wait Until Element Is Visible    ${user}
     Input Text    ${user}    ${administareur}

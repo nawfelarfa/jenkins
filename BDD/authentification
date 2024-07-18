@@ -1,0 +1,19 @@
+Scenario: Successful Login
+  Given the user is on the login page 
+  the user enters the username as "administareur" And the user enters the password as "motpass" And the user clicks the "Se connecter" button 
+  Then the user should be logged in successfully
+
+Scenario: Invalid Login Credentials 
+  Given the user is on the login page 
+  When the user enters the username as "administareur" And the user enters the password as "aaaa" And the user clicks the "Se connecter" button 
+  Then the page should display "Invalid credentials"
+
+Scenario: Invalid Login Credentials with username "bbbbb" 
+ Given the user is on the login page 
+ When the user enters the username as "bbbbb" And the user enters the password as "aaaa" And the user clicks the "Se connecter" button 
+ the page should display "Invalid credentials"
+ 
+Scenario: Successful Logout 
+ Given the user is on the profile page 
+ When the user clicks on the profile button And the user clicks on the logout button 
+ Then the user should be logged out of the system

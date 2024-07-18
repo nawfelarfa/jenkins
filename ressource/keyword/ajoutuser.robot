@@ -7,8 +7,7 @@ Variables    ../locators/acceuil.py
 Variables    ../locators/user.py
 *** Keywords ***
 ajoutuser
-    Wait Until Element Is Visible    ${admin}
-    Click Element    ${admin}
+   
     ${file} =  Get File      C:\\application\\ressource\\JDD\\listeuser.csv
     ${table}=    Evaluate    [line.split(',') for line in $file.splitlines()[1:]]
     FOR  ${row}    IN   @{table}
@@ -17,6 +16,8 @@ ajoutuser
          ${em}=      Set Variable     ${row}[2]
          ${usernom}=      Set Variable     ${row}[3]
          ${motdepass}=       Set Variable     ${row[4]}
+         Wait Until Element Is Visible    ${admin}
+         Click Element    ${admin}
          Wait Until Element Is Visible    ${add}    timeout=20s
          Click Element    ${add}
          Wait Until Element Is Visible     ${role}

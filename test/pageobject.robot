@@ -10,25 +10,24 @@ Resource    ../ressource/keyword/recherche.robot
 *** Test Cases ***
 authentok
     [Documentation]    acces avec user et mot de passe valide
-    [Tags]    smoke
+    [Tags]    smokeo
     openpage
     loginok
     Close Browser
 authentkop
     [Documentation]    mot de passe invalide
-    [Tags]    smoke
+    [Tags]    ko
     openpage
     loginkopassword
-    deconnexion
     Close Browser
 auhentkouser
     [Documentation]    user non existent
-    [Tags]    smoke
+    [Tags]    ko
     openpage
     loginkouser
     Close Browser
 ajouter
-    [Documentation]    ajouter un u                        tilisateur
+    [Documentation]    ajouter un utilisateur
     [Tags]    aj
     openpage
     loginok

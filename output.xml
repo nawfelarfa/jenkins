@@ -1,1346 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-06-22T13:34:24.845945" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.0 on win32)" generated="2024-07-18T09:46:34.605878" rpa="false" schemaversion="5">
 <suite id="s1" name="Pageobject" source="C:\application\test\pageobject.robot">
-<test id="s1-t1" name="authentok" line="10">
+<test id="s1-t1" name="authentkop" line="17">
 <kw name="openpage" owner="commun">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:25.770095" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2024-07-18T09:46:35.253137" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T13:34:25.762091" elapsed="3.884706"/>
+<status status="PASS" start="2024-07-18T09:46:35.253137" elapsed="4.737888"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-22T13:34:29.646797" elapsed="1.606744"/>
+<status status="PASS" start="2024-07-18T09:46:39.991025" elapsed="0.069354"/>
 </kw>
-<status status="PASS" start="2024-06-22T13:34:25.762091" elapsed="5.491450"/>
+<status status="PASS" start="2024-07-18T09:46:35.253137" elapsed="4.808239"/>
 </kw>
-<kw name="loginok" owner="authentification">
+<kw name="loginkopassword" owner="authentification">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:31.595898" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:31.619905" level="FAIL">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCFD7E3]
-	(No symbol) [0x00007FF60FD00641]
-	(No symbol) [0x00007FF60FD006E0]
-	(No symbol) [0x00007FF60FD4733B]
-	(No symbol) [0x00007FF60FD4773C]
-	(No symbol) [0x00007FF60FD8E997]
-	(No symbol) [0x00007FF60FD6C25F]
-	(No symbol) [0x00007FF60FD8BC80]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
 <arg>${user}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-06-22T13:34:31.261547" elapsed="0.510395">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCFD7E3]
-	(No symbol) [0x00007FF60FD00641]
-	(No symbol) [0x00007FF60FD006E0]
-	(No symbol) [0x00007FF60FD4733B]
-	(No symbol) [0x00007FF60FD4773C]
-	(No symbol) [0x00007FF60FD8E997]
-	(No symbol) [0x00007FF60FD6C25F]
-	(No symbol) [0x00007FF60FD8BC80]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<status status="PASS" start="2024-07-18T09:46:40.064295" elapsed="0.625390"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:40.689685" level="INFO">Typing text 'admin' into text field 'xpath://input[@name='username']'.</msg>
 <arg>${user}</arg>
 <arg>${administareur}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:31.771942" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:40.689685" elapsed="0.240450"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${password}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:31.779947" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:40.930135" elapsed="0.078138"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:41.008273" level="INFO">Typing password into text field 'xpath://input[@name='password']'.</msg>
+<msg time="2024-07-18T09:46:41.070786" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password}</arg>
-<arg>${motpass}</arg>
+<arg>aaaa</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:31.779947" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:41.008273" elapsed="0.245242"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:41.253515" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
 <arg>${seconnecter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:31.779947" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:41.253515" elapsed="1.000955"/>
 </kw>
-<status status="FAIL" start="2024-06-22T13:34:31.261547" elapsed="0.518400">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCFD7E3]
-	(No symbol) [0x00007FF60FD00641]
-	(No symbol) [0x00007FF60FD006E0]
-	(No symbol) [0x00007FF60FD4733B]
-	(No symbol) [0x00007FF60FD4773C]
-	(No symbol) [0x00007FF60FD8E997]
-	(No symbol) [0x00007FF60FD6C25F]
-	(No symbol) [0x00007FF60FD8BC80]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-18T09:46:42.255470" elapsed="0.252151"/>
+</kw>
+<status status="PASS" start="2024-07-18T09:46:40.064295" elapsed="2.443326"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:31.779947" elapsed="0.000000"/>
-</kw>
-<doc>acces avec user et mot de passe valide</doc>
-<tag>smoke</tag>
-<status status="FAIL" start="2024-06-22T13:34:25.762091" elapsed="6.017856">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCFD7E3]
-	(No symbol) [0x00007FF60FD00641]
-	(No symbol) [0x00007FF60FD006E0]
-	(No symbol) [0x00007FF60FD4733B]
-	(No symbol) [0x00007FF60FD4773C]
-	(No symbol) [0x00007FF60FD8E997]
-	(No symbol) [0x00007FF60FD6C25F]
-	(No symbol) [0x00007FF60FD8BC80]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</test>
-<test id="s1-t2" name="authentkop" line="16">
-<kw name="openpage" owner="commun">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:31.835963" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T13:34:31.827956" elapsed="4.262124"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:36.186104" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:36.226114" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<doc>Maximizes current browser window.</doc>
-<status status="FAIL" start="2024-06-22T13:34:36.090080" elapsed="0.144038">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<status status="FAIL" start="2024-06-22T13:34:31.827956" elapsed="4.406162">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="loginkopassword" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:36.234118" elapsed="0.000000"/>
-</kw>
-<kw name="deconnexion" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:36.234118" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:36.234118" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:42.509620" elapsed="3.123940"/>
 </kw>
 <doc>mot de passe invalide</doc>
-<tag>smoke</tag>
-<status status="FAIL" start="2024-06-22T13:34:31.819955" elapsed="4.422164">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<tag>ko</tag>
+<status status="PASS" start="2024-07-18T09:46:35.253137" elapsed="10.380423"/>
 </test>
-<test id="s1-t3" name="auhentkouser" line="23">
+<test id="s1-t2" name="auhentkouser" line="23">
 <kw name="openpage" owner="commun">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:36.258121" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2024-07-18T09:46:45.633560" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T13:34:36.258121" elapsed="4.837963"/>
+<status status="PASS" start="2024-07-18T09:46:45.633560" elapsed="4.260939"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:41.408162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:41.640221" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
 <doc>Maximizes current browser window.</doc>
-<status status="FAIL" start="2024-06-22T13:34:41.096084" elapsed="0.552141">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<status status="PASS" start="2024-07-18T09:46:49.894499" elapsed="0.066772"/>
 </kw>
-<status status="FAIL" start="2024-06-22T13:34:36.258121" elapsed="5.390104">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<status status="PASS" start="2024-07-18T09:46:45.633560" elapsed="4.327711"/>
 </kw>
 <kw name="loginkouser" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:41.744247" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${user}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-18T09:46:49.966269" elapsed="0.664818"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:50.631087" level="INFO">Typing text 'bbbbb' into text field 'xpath://input[@name='username']'.</msg>
+<arg>${user}</arg>
+<arg>bbbbb</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T09:46:50.631087" elapsed="0.344830"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-18T09:46:50.975917" elapsed="0.062510"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:51.038427" level="INFO">Typing password into text field 'xpath://input[@name='password']'.</msg>
+<msg time="2024-07-18T09:46:51.134464" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>aaaa</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T09:46:51.038427" elapsed="0.291880"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-18T09:46:51.330307" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${seconnecter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-18T09:46:51.330307" elapsed="0.756940"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-07-18T09:46:52.087247" elapsed="0.337783"/>
+</kw>
+<status status="PASS" start="2024-07-18T09:46:49.964271" elapsed="2.460759"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:41.760252" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-18T09:46:52.427027" elapsed="2.632439"/>
 </kw>
 <doc>user non existent</doc>
-<tag>smoke</tag>
-<status status="FAIL" start="2024-06-22T13:34:36.258121" elapsed="5.502131">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
+<tag>ko</tag>
+<status status="PASS" start="2024-07-18T09:46:45.633560" elapsed="9.425906"/>
 </test>
-<test id="s1-t4" name="ajouter" line="29">
-<kw name="openpage" owner="commun">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:41.856276" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg time="2024-06-22T13:34:46.700642" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:46.724645" level="FAIL">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-06-22T13:34:41.840274" elapsed="4.892375">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:46.732649" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-06-22T13:34:41.840274" elapsed="4.892375">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="loginok" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:46.732649" elapsed="0.000000"/>
-</kw>
-<kw name="ajoutuser" owner="ajoutuser">
-<status status="NOT RUN" start="2024-06-22T13:34:46.740652" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:46.740652" elapsed="0.000000"/>
-</kw>
-<doc>ajouter un utilisateur</doc>
-<tag>aj</tag>
-<status status="FAIL" start="2024-06-22T13:34:41.840274" elapsed="4.900378">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</test>
-<test id="s1-t5" name="rechercheruserok" line="36">
-<kw name="openpage" owner="commun">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:46.772659" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg time="2024-06-22T13:34:51.662310" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCDF1CC]
-	(No symbol) [0x00007FF60FCDF090]
-	(No symbol) [0x00007FF60FCFA4E1]
-	(No symbol) [0x00007FF60FD8B359]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:51.846358" level="FAIL">WebDriverException: Message: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7CE9]
-	(No symbol) [0x00007FF60FCE03B1]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCED97E]
-	(No symbol) [0x00007FF60FD05C6F]
-	(No symbol) [0x00007FF60FD0B67A]
-	(No symbol) [0x00007FF60FCDF33A]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-06-22T13:34:46.772659" elapsed="5.081701">WebDriverException: Message: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7CE9]
-	(No symbol) [0x00007FF60FCE03B1]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCED97E]
-	(No symbol) [0x00007FF60FD05C6F]
-	(No symbol) [0x00007FF60FD0B67A]
-	(No symbol) [0x00007FF60FCDF33A]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:51.854360" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-06-22T13:34:46.764662" elapsed="5.089698">WebDriverException: Message: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7CE9]
-	(No symbol) [0x00007FF60FCE03B1]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCED97E]
-	(No symbol) [0x00007FF60FD05C6F]
-	(No symbol) [0x00007FF60FD0B67A]
-	(No symbol) [0x00007FF60FCDF33A]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="loginok" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:51.950383" elapsed="0.000000"/>
-</kw>
-<kw name="search" owner="recherche">
-<status status="NOT RUN" start="2024-06-22T13:34:52.014400" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:52.014400" elapsed="0.000000"/>
-</kw>
-<doc>recherche d'un utilisateur</doc>
-<tag>rech</tag>
-<status status="FAIL" start="2024-06-22T13:34:46.764662" elapsed="5.281747">WebDriverException: Message: target frame detached
-  (failed to check if window was closed: disconnected: unable to send message to renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7CE9]
-	(No symbol) [0x00007FF60FCE03B1]
-	(No symbol) [0x00007FF60FCDE39D]
-	(No symbol) [0x00007FF60FCDEBAF]
-	(No symbol) [0x00007FF60FCED97E]
-	(No symbol) [0x00007FF60FD05C6F]
-	(No symbol) [0x00007FF60FD0B67A]
-	(No symbol) [0x00007FF60FCDF33A]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</test>
-<test id="s1-t6" name="rechercheruserko" line="43">
-<kw name="openpage" owner="commun">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:52.099545" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T13:34:52.099545" elapsed="5.925907"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:58.129480" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:58.345535" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<doc>Maximizes current browser window.</doc>
-<status status="FAIL" start="2024-06-22T13:34:58.025452" elapsed="0.336090">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<status status="FAIL" start="2024-06-22T13:34:52.091530" elapsed="6.270012">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="loginok" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:34:58.377542" elapsed="0.000000"/>
-</kw>
-<kw name="searchko" owner="recherche">
-<status status="NOT RUN" start="2024-06-22T13:34:58.377542" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:34:58.385542" elapsed="0.000000"/>
-</kw>
-<doc>recherche d'un utilisateur</doc>
-<tag>rechko</tag>
-<status status="FAIL" start="2024-06-22T13:34:52.088948" elapsed="6.304599">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</test>
-<test id="s1-t7" name="restuser" line="50">
-<kw name="openpage" owner="commun">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T13:34:58.492633" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<msg time="2024-06-22T13:35:02.940189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:35:03.180249" level="FAIL">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-06-22T13:34:58.492633" elapsed="4.695620">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-06-22T13:35:03.188253" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-06-22T13:34:58.492633" elapsed="4.695620">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</kw>
-<kw name="loginok" owner="authentification">
-<status status="NOT RUN" start="2024-06-22T13:35:03.244266" elapsed="0.000000"/>
-</kw>
-<kw name="reset" owner="recherche">
-<status status="NOT RUN" start="2024-06-22T13:35:03.252267" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-06-22T13:35:03.260269" elapsed="0.000000"/>
-</kw>
-<doc>reset des informations de recherche</doc>
-<tag>azero</tag>
-<status status="FAIL" start="2024-06-22T13:34:58.492633" elapsed="4.767636">WebDriverException: Message: disconnected: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCE15EF]
-	(No symbol) [0x00007FF60FCE0D17]
-	(No symbol) [0x00007FF60FCE04D1]
-	(No symbol) [0x00007FF60FCE0410]
-	(No symbol) [0x00007FF60FCDF3CB]
-	(No symbol) [0x00007FF60FD0584F]
-	(No symbol) [0x00007FF60FD8BFDE]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</status>
-</test>
-<status status="FAIL" start="2024-06-22T13:34:25.013990" elapsed="38.294293"/>
+<status status="PASS" start="2024-07-18T09:46:34.605878" elapsed="20.453588"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="7" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">aj</stat>
-<stat pass="0" fail="1" skip="0">azero</stat>
-<stat pass="0" fail="1" skip="0">rech</stat>
-<stat pass="0" fail="1" skip="0">rechko</stat>
-<stat pass="0" fail="3" skip="0">smoke</stat>
+<stat pass="2" fail="0" skip="0">ko</stat>
 </tag>
 <suite>
-<stat pass="0" fail="7" skip="0" id="s1" name="Pageobject">Pageobject</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Pageobject">Pageobject</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-06-22T13:34:25.005985" level="ERROR">Taking listener 'allure_robotframework;outputdir=C:\application\resultat' into use failed: Importing listener 'allure_robotframework' failed: Creating instance failed: OSError: [WinError 123] La syntaxe du nom de fichier, de répertoire ou de volume est incorrecte: 'C:\\application\\outputdir=C:\\application\\resultat'
-Traceback (most recent call last):
-  File "C:\Users\ordi2310865\AppData\Local\Programs\Python\Python311\Lib\site-packages\allure_robotframework\robot_listener.py", line 20, in __init__
-    self.logger = AllureFileLogger(logger_path)
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\ordi2310865\AppData\Local\Programs\Python\Python311\Lib\site-packages\allure_commons\logger.py", line 19, in __init__
-    self._report_dir.mkdir(parents=True, exist_ok=True)
-  File "C:\Users\ordi2310865\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1116, in mkdir
-    os.mkdir(self, mode)
-OSError: [WinError 123] La syntaxe du nom de fichier, de répertoire ou de volume est incorrecte: 'C:\\application\\outputdir=C:\\application\\resultat'</msg>
-<msg time="2024-06-22T13:34:31.595898" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:36.186104" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:41.408162" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:46.700642" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:51.662310" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCDF1CC]
-	(No symbol) [0x00007FF60FCDF090]
-	(No symbol) [0x00007FF60FCFA4E1]
-	(No symbol) [0x00007FF60FD8B359]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:34:58.129480" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
-<msg time="2024-06-22T13:35:02.940189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=125.0.6422.176)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60FEC1F52+60322]
-	(No symbol) [0x00007FF60FE3CEC9]
-	(No symbol) [0x00007FF60FCF7EBA]
-	(No symbol) [0x00007FF60FCCD5A5]
-	(No symbol) [0x00007FF60FD736B7]
-	(No symbol) [0x00007FF60FD8B331]
-	(No symbol) [0x00007FF60FD6BFC3]
-	(No symbol) [0x00007FF60FD39617]
-	(No symbol) [0x00007FF60FD3A211]
-	GetHandleVerifier [0x00007FF6101D94AD+3301629]
-	GetHandleVerifier [0x00007FF6102236D3+3605283]
-	GetHandleVerifier [0x00007FF610219450+3563680]
-	GetHandleVerifier [0x00007FF60FF74326+790390]
-	(No symbol) [0x00007FF60FE4750F]
-	(No symbol) [0x00007FF60FE43404]
-	(No symbol) [0x00007FF60FE43592]
-	(No symbol) [0x00007FF60FE32F9F]
-	BaseThreadInitThunk [0x00007FFDD9A07344+20]
-	RtlUserThreadStart [0x00007FFDD9B426B1+33]
-</msg>
 </errors>
 </robot>

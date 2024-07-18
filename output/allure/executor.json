@@ -1,6 +1,8 @@
 {
     "name": "Robot Framework",
-    "type": "robotframework"
+    "type": "robotframework",
+    "realiser": "ARFOUI NAOUFEL",
+    "version":"version1.0"
     
 }
     
