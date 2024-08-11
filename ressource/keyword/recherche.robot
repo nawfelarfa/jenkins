@@ -48,7 +48,7 @@ reset
     Should Be Equal     ${vemp}    ${None}
     Should Be Equal    ${vstat}    ${None}
     Should Be Equal    ${vrole}    ${None}
-   
+    
 
 *** Comments ***
     recherche test

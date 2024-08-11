@@ -31,5 +31,7 @@ deconnexion
     Click Element    ${profil}
     Wait Until Element Is Visible    ${logout}
     Click Element    ${logout} 
+    
+    
 
     

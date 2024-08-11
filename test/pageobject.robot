@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    OperatingSystem
-Library      AllureLibrary  
+Library      AllureLibrary   
 Resource    ../ressource/keyword/commun.robot
 Resource    ../ressource/keyword/authentification.robot
 Resource    ../ressource/keyword/ajoutuser.robot
@@ -10,43 +10,47 @@ Resource    ../ressource/keyword/recherche.robot
 *** Test Cases ***
 authentok
     [Documentation]    acces avec user et mot de passe valide
-    [Tags]    smokeo
+    [Tags]    cr
     openpage
     loginok
+    Capture Page Screenshot
     Close Browser
 authentkop
     [Documentation]    mot de passe invalide
-    [Tags]    ko
+    [Tags]    critical
     openpage
     loginkopassword
     Close Browser
 auhentkouser
     [Documentation]    user non existent
-    [Tags]    ko
+    [Tags]     critical
     openpage
     loginkouser
+    
     Close Browser
 ajouter
     [Documentation]    ajouter un utilisateur
-    [Tags]    aj
+    [Tags]     ad                                                                                                                                                                                                                                                                                                                                                                                                              
     openpage
     loginok
     ajoutuser
+    
     Close Browser
 rechercheruserok
     [Documentation]     recherche d'un utilisateur
-    [Tags]    rech
+    [Tags]    normal
     openpage
     loginok
     search
-    Capture Page Screenshot
+    
     Close Browser
 rechercheruserko
     [Documentation]     recherche d'un utilisateur
-    [Tags]    rechko
+    [Tags]    normal
     openpage
     loginok
     searchko
+    
     Close Browser
 restuser
     [Documentation]    reset des informations de recherche
@@ -54,4 +58,5 @@ restuser
     openpage
     loginok
     reset
+   
     Close Browser

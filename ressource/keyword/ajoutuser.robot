@@ -22,7 +22,8 @@ ajoutuser
          Click Element    ${add}
          Wait Until Element Is Visible     ${role}
          Click Element     ${role}
-         Run Keyword If    '${ro}' == 'Admin'    Click Element    ${Administra}
+         Run Keyword If    '${ro}' == 'Admin'    Click Element    ${Administra}    
+         ...            Log      aaa
     ...               ELSE    Click Element    ${ESS}
         Wait Until Element Is Visible    ${status}
         Click Element    ${status}
@@ -37,6 +38,7 @@ ajoutuser
         Input Password    ${confirmation}       ${motdepass}   
         Wait Until Element Is Visible    ${save}
         Click Element    ${save}  
+        Wait Until Page Contains    text
    END
 
 
